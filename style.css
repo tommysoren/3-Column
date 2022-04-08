@@ -1,0 +1,93 @@
+body {
+  background: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 7px;
+  margin: 2rem;
+  overflow: hidden;
+}
+
+.box-1 {
+  background: hsl(31, 77%, 52%);
+}
+
+.box-2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.box-3 {
+  background: hsl(179, 100%, 13%);
+}
+
+.box {
+  padding: 60px;
+}
+
+.box h2 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+}
+
+.box p {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.3;
+}
+
+.box button {
+  background-color: hsl(0, 0%, 95%);
+  padding: 13px 27px;
+  border-radius: 26px;
+  margin-top: 45px;
+  display: inline-block;
+  transition: all .4s ease-in-out;
+}
+
+.box button a {
+  text-decoration: none;
+}
+
+.box-1 a {
+  color: hsl(31, 77%, 52%);
+}
+
+.box-2 a {
+  color: hsl(184, 100%, 22%);
+}
+
+.box-3 a {
+  color: hsl(179, 100%, 13%);
+}
+
+.box button:hover {
+  background: transparent;
+  border: 1px solid white;
+}
+
+.box button a:hover {
+  color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    margin: 2rem .5rem;
+  }
+}
